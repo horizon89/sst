@@ -38,9 +38,9 @@
                       <input name="webform_id" type="hidden" value="2744101">
                         <!-- Redirect Urls -->
                           <!-- Name -->
-                          <input name="name" type="text" placeholder="First Name..." autocomplete="given-name" spellcheck="false" style="width:99.5%;margin:0 0 1em 0;" aria-label="Name">
+                          <input name="name" type="text" placeholder="First Name..." autocomplete="given-name" spellcheck="false" style="width:99.5%;padding-left:10px;" aria-label="Name">
                         <!-- Email -->
-                      <input name="email" type="email" placeholder="Email..." autocomplete="email" required spellcheck="false" style="width:99.5%;margin:0 0 1em 0;" aria-label="Email">
+                      <input name="email" type="email" placeholder="Email..." autocomplete="email" required spellcheck="false" style="width:99.5%;padding-left:10px;" aria-label="Email">
                       <!-- Other -->
                       <input name="custom_signup" type="hidden" value="true">
                       <!-- Submit Button -->
@@ -96,5 +96,12 @@
       setTimeout(webform_check, 5000);
       setTimeout(webform_check, 8000);
     </script>
+    <style>
+      input {
+        border-radius: 3px;
+        margin: 0 0 0.6em 0;
+        line-height: 30px;
+      }
+    </style>
   </body>
 </html>
