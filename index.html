@@ -120,11 +120,14 @@
     mixpanel.init('247d298fce00228e951097f65ce82f20', {debug: true});
     var em_ = getURLParameter('em') || '';
     var n__ = getURLParameter('n') || '';
-    mixpanel.track( 'View' );
+    mixpanel.track( 'View', {
+      'Email': em_ ,
+      'Name' : n__
+    });
     mixpanel.people.set({
       'Email': em_ ,
       'Name' : n__
-    );
+    });
     </script>
   </body>
 </html>
